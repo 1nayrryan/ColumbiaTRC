@@ -1,0 +1,15 @@
+# Environment
+.env
+.env.local
+backend/.env
+frontend/.env.local
+
+# Dependencies and builds
+node_modules/
+frontend/.next/
+frontend/out/
+backend/node_modules/
+
+# Logs and OS files
+npm-debug.log*
+.DS_Store

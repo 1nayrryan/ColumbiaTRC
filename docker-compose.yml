@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: columbiatrc
+      POSTGRES_USER: trc
+      POSTGRES_PASSWORD: trc
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    command: azurite --blobHost 0.0.0.0 --loose
+    ports:
+      - "10000:10000"
+
+volumes:
+  postgres_data:

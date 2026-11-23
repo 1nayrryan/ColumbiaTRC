@@ -1,0 +1,9 @@
+body { margin: 0; font-family: Arial, sans-serif; color: #202124; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+nav, section { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+nav { justify-content: space-between; }
+input, select, button { padding: 8px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #bbb; padding: 8px; text-align: left; }
+.card { border: 1px solid #bbb; padding: 14px; margin-bottom: 14px; }
+.error { color: #b00020; }
